@@ -7,9 +7,10 @@ test("should render an NFT card with title and image", () => {
   );
 
   const p = getByText("test-nft-card");
+
   const img = getByRole("img");
 
-  expect(p.textContent).toBe("test-nft-cards");
+  expect(p.textContent).toBe("test-nft-card");
   expect(img.getAttribute("src")).toBe("a.png");
 
   expect(container.firstChild).toMatchInlineSnapshot(`
