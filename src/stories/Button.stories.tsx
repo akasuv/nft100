@@ -6,9 +6,12 @@ export default {
   component: Button,
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args: any) => <Button {...args} />;
 
-export const Default = Template.bind({});
+export const Default = Template.bind({
+
+
+});
 Default.args = {
   children: "Click",
 };
