@@ -64,6 +64,8 @@
     "url": "https://github.com/akasuv/nft100.git"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   }
 }
