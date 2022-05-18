@@ -10,5 +10,5 @@ const Template = (args: any) => <Button {...args} />;
 
 export const Default: any = Template.bind({});
 Default.args = {
-  children: "Clickx",
+  children: "Click",
 };
