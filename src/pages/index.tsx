@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to
+          Welcome to (Test 000)
           <a href="https://nextjs.org">
             Next.js! {process.env.NEXT_PUBLIC_ENV}
           </a>
