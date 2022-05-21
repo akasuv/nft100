@@ -9,6 +9,10 @@ export type NFTCardProps = {
   backgroundImage: string;
 };
 
+function shortenAddress(address: string, length: number = 10) {
+  return address.slice(0, length) + "..." + address.slice(-length);
+}
+
 const NFTCard = ({
   name,
   imageURL,
@@ -76,10 +80,17 @@ const NFTCard = ({
               Contract
             </Typography>
             <Typography fontSize={10} fontWeight="medium">
-              {contractAddress}
+              {shortenAddress(contractAddress)}
             </Typography>
           </Box>
-          <Box sx={{ width: 36, height: 36 }}>
+          <Box
+            sx={{
+              width: 36,
+              height: 36,
+              borderRadius: "4px",
+              overflow: "hidden",
+            }}
+          >
             <img src={imageURL} width="100%" height="100%" alt={name} />
           </Box>
         </Box>
@@ -92,7 +103,7 @@ const NFTCard = ({
           width: "100%",
           height: "100%",
           backgroundColor: "rgba(0, 0, 0, 0.42)",
-          backdropFilter: "blur(8px)",
+          backdropFilter: "blur(4px)",
           zIndex: 1,
           borderRadius: "8px",
           overflow: "hidden",
