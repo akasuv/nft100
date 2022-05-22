@@ -37,6 +37,7 @@ const NFTCard = ({
           height: 180,
           width: 300,
           backgroundImage: `url(${backgroundImage})`,
+          backgroundColor: "#000",
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "relative",
@@ -48,7 +49,6 @@ const NFTCard = ({
           borderRadius: "8px",
           overflow: "hidden",
           "&:hover": {
-            border: "1px solid #fff",
             transform: "translate(-10px, -10px)",
           },
         }}
